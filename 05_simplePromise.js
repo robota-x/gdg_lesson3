@@ -6,14 +6,15 @@ Promise.resolve("first promise success!")
     console.log("first fail:" + value);
   });
 
-// Promise.reject("second promise fail!")
-//   .then(function(value) {
-//     console.log("second success: " + value);
-//   })
-//   .catch(function(value) {
-//     console.log("second fail:" + value);
-//   });
+Promise.reject("second promise fail!")
+  .then(function(value) {
+    console.log("second success: " + value);
+  })
+  .catch(function(value) {
+    console.log("second fail:" + value);
+  });
 
+/* Uncomment this last promise. run the code and check the output. */
 // Promise.reject("third promise fail!")
 //   .then(function(value) {
 //     console.log("third success: " + value);
@@ -21,6 +22,7 @@ Promise.resolve("first promise success!")
 //   .catch(function(value) {
 //     console.log("third fail:" + value);
 //   })
-//   .finally(function() {
+//   .finally(function() {  // in class we used another 'then()', with the same result. Check on MDN about finally()
 //     console.log("third all done!");
 //   });
+

@@ -12,25 +12,16 @@ function returnsAPromise() {
     })
     .then(function(value) {
       console.log("third then:", value);
-      return 10;
+      return "return value of the third promise";
     });
 
-  return promiseResult;
+  return promiseResult; // notice how we are returning the promise chain itself!
 }
 
 var functionResult = returnsAPromise();
-// console.log("functionResult", functionResult);
+console.log("functionResult", functionResult);
 
-var x = functionResult
-  .then(function(result) {
-    console.log(result + 1);
-    return result;
-  })
-  .then(function(result) {
-    console.log(result + 10);
-    return result;
-  });
-
-x.then(function(res) {
-  console.log("in x", res);
-});
+/* 
+  what is the return value of the function (a hint is in the name of it...)?
+  how could we extract the return value of the third then?
+*/

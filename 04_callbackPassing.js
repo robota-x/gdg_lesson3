@@ -10,3 +10,8 @@ function startWork(stuff, callback) {
 }
 
 startWork(50, finished);
+
+/* 
+  try to trace mentally or on a piece of paper the execution line by line. 
+  What is the program output? Once done, run this script and check if correct.
+*/

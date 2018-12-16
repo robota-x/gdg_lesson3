@@ -12,3 +12,8 @@ myPromise
   .then(function(value) {
     console.log("third then:", value);
   });
+
+/*
+  mentally trace the execution of this code again, then run to verify your assumption.
+  uncomment the return value in the second then, and then run again.
+*/
