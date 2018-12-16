@@ -32,5 +32,5 @@ var x = functionResult
   });
 
 x.then(function(res) {
-    console.log('in x', res);
-})
+  console.log("in x", res);
+});

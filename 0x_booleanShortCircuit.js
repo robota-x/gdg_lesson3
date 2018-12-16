@@ -1,5 +1,5 @@
 var errorFunction = function() {
-  throw new Error('errorFunction error!');
+  throw new Error("errorFunction error!");
 };
 
 if (true || errorFunction()) {

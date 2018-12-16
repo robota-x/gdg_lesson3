@@ -1,5 +1,5 @@
 function returnsAPromise() {
-  return Promise.resolve('resolution of ');
+  return Promise.resolve("resolution of ");
 
   var promiseResult = myPromise
     .then(function(value) {
