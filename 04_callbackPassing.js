@@ -1,17 +1,18 @@
-function finished(result) {
+function notifySuccess(result) {
   console.log("Finished! The result is: " + result);
 }
 
-function startWork(stuff, callback) {
-  console.log("Starting! The stuff is: ", stuff);
+function startWork(value, callbackFunction) {
+  console.log("Starting! The value is: ", value);
   setTimeout(function() {
-    callback(stuff + 50);
+    callbackFunction(value + 50);
   }, 1000);
 }
 
-startWork(50, finished);
+startWork(50, notifySuccess);
 
 /* 
-  try to trace mentally or on a piece of paper the execution line by line. 
+  Try to trace (mentally or on a piece of paper) the execution flow, line by line. 
   What is the program output? Once done, run this script and check if correct.
+  Use the Vs Code debugger to add a breakpoint at live 11 and then follow the execution steps.
 */

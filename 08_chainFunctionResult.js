@@ -1,24 +1,23 @@
-function returnsAPromise() {
-  /* 
-    this is the same function as 07_returnPromiseFromFunction, 
-    but simplified, by not using any unnecessary variable
-  */
-  return Promise.resolve(42)
-    .then(function(value) {
+/* 
+  this is exactly the same function as 07_returnPromiseFromFunction, 
+  simplified by removing unnecessary variables and using es6 syntax
+*/
+const returnsAPromise = () =>
+  Promise.resolve(42)
+    .then(value => {
       console.log("first then:", value);
       return value + 50;
     })
-    .then(function(value) {
+    .then(value => {
       console.log("second then:", value);
       return value;
     })
-    .then(function(value) {
+    .then(value => {
       console.log("third then:", value);
       return "return value of the third promise";
     });
-}
 
-var functionResult = returnsAPromise(); // functionResult is still a promise, which will resolve with the return value of the last 'then' (the third one)/
+var functionResult = returnsAPromise(); // functionResult is still a promise, which will resolve with the return value of the last 'then' (the third one)
 
 var x = functionResult
   .then(function(result) {

@@ -15,13 +15,14 @@ function returnsAPromise() {
       return "return value of the third promise";
     });
 
-  return promiseResult; // notice how we are returning the promise chain itself!
+  return promiseResult; // notice how we are returning the whole promise chain itself!
 }
 
 var functionResult = returnsAPromise();
 console.log("functionResult", functionResult);
 
 /* 
-  what is the return value of the function (a hint is in the name of it...)?
-  how could we extract the return value of the third then?
+  What is the return value of the function (a hint is in the name of the function itself)?
+  Modify the code after line 21 to console.log() the return value of the third 'then' block
+  The solution is in step 08
 */

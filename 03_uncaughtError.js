@@ -3,5 +3,9 @@ function myCallbackFunction() {
 }
 
 setTimeout(myCallbackFunction, 1000);
-/* uncomment and run again. is hello world getting printed? why? */
+/* 
+  Run the file the way it is. What happens?
+  Then uncomment line 11 and. run again the file. is hello world getting printed? why? 
+*/
+
 // throw new Error("this is an error");
